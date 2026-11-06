@@ -1,0 +1,57 @@
+<section class="merge-editor">
+  <div class="subject-heading"><label class="editor-label" for="merge-subject">Subject</label><button type="button" class="insert-subject-field" aria-label="Insert subject field">&#36;{} <span>Insert field</span></button></div>
+  <input id="merge-subject" class="subject" type="text" placeholder="Subject" autocomplete="off" aria-label="Email subject">
+  <div class="body-heading"><label class="editor-label">Message</label><div class="editor-actions"><button type="button" class="insert-body-field" aria-label="Insert message field">&#36;{} <span>Insert field</span></button><button type="button" class="source-toggle">HTML source</button></div></div>
+  <div class="rich" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Email body" spellcheck="true"></div>
+  <textarea class="source" aria-label="HTML source" spellcheck="false" hidden></textarea>
+  <div class="toolbar" role="toolbar" aria-label="Formatting">
+    <div class="tool-group">
+      <button type="button" data-command="undo" aria-label="Undo" title="Undo">&#8630;</button>
+      <button type="button" data-command="redo" aria-label="Redo" title="Redo">&#8631;</button>
+    </div>
+    <div class="tool-group">
+      <select class="font-family" aria-label="Font" title="Font">
+        <option value="Arial">Sans Serif</option><option value="Georgia">Serif</option>
+        <option value="Courier New">Fixed Width</option><option value="Verdana">Verdana</option>
+        <option value="Tahoma">Tahoma</option><option value="Trebuchet MS">Trebuchet</option>
+      </select>
+      <select class="font-size" aria-label="Text size" title="Text size">
+        <option value="1">Small</option><option value="3" selected>Normal</option>
+        <option value="5">Large</option><option value="7">Huge</option>
+      </select>
+    </div>
+    <div class="tool-group">
+      <button type="button" data-command="bold" aria-label="Bold" title="Bold (Ctrl+B)"><b>B</b></button>
+      <button type="button" data-command="italic" aria-label="Italic" title="Italic (Ctrl+I)"><i>I</i></button>
+      <button type="button" data-command="underline" aria-label="Underline" title="Underline (Ctrl+U)"><u>U</u></button>
+      <button type="button" class="color-toggle" aria-label="Text and background color" title="Text and background color" aria-expanded="false"><span class="color-symbol">A</span><small>&#9662;</small></button>
+    </div>
+    <div class="tool-group">
+      <select class="alignment" aria-label="Alignment" title="Alignment">
+        <option value="justifyLeft">Align left</option><option value="justifyCenter">Center</option><option value="justifyRight">Align right</option>
+      </select>
+      <button type="button" data-command="insertOrderedList" aria-label="Numbered list" title="Numbered list">&#9776;<small>1.</small></button>
+      <button type="button" data-command="insertUnorderedList" aria-label="Bulleted list" title="Bulleted list">&#9776;<small>&bull;</small></button>
+      <button type="button" data-command="outdent" aria-label="Decrease indent" title="Decrease indent">&#8676;</button>
+      <button type="button" data-command="indent" aria-label="Increase indent" title="Increase indent">&#8677;</button>
+    </div>
+    <div class="tool-group">
+      <button type="button" data-command="formatBlock" data-value="blockquote" aria-label="Quote" title="Quote">&#10077;</button>
+      <button type="button" data-command="strikeThrough" aria-label="Strikethrough" title="Strikethrough"><s>S</s></button>
+      <button type="button" class="link-toggle" aria-label="Insert link" title="Insert link">&#128279;</button>
+      <button type="button" data-command="removeFormat" aria-label="Remove formatting" title="Remove formatting">T<sub>x</sub></button>
+    </div>
+  </div>
+  <div class="color-panel editor-popover" hidden>
+    <div><span>Text color</span><div class="text-colors swatches"></div></div>
+    <div><span>Background color</span><div class="background-colors swatches"></div></div>
+  </div>
+  <div class="link-panel editor-popover" hidden>
+    <label>Link URL<input type="url" class="link-url" aria-label="Link URL" placeholder="https://" autocomplete="off"></label>
+    <button type="button" class="apply-link">Apply</button><button type="button" class="cancel-link">Cancel</button>
+    <span class="link-error" role="alert"></span>
+  </div>
+  <div class="suggestions" role="listbox" aria-label="Column suggestions" popover="manual" hidden></div>
+  <div class="field-chips" aria-label="Available merge fields"></div>
+  <aside class="field-tooltip" role="tooltip" hidden></aside>
+</section>

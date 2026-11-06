@@ -1,0 +1,6 @@
+# Replace placeholders, then distribute this file privately.
+email=YOUR_OTP_ACCOUNT@gmail.com
+app_password=REPLACE_WITH_16_CHARACTER_APP_PASSWORD
+# Optional login-audit endpoint; configure both fields together after deployment.
+# audit_url=https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec
+# audit_secret=REPLACE_WITH_A_LONG_RANDOM_SHARED_SECRET

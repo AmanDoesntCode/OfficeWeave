@@ -1,0 +1,11 @@
+[project]
+name = "mail-merger"
+version = "1.0.3"
+description = "A local Python and Gradio desktop mail merge application"
+requires-python = ">=3.12,<3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["ui: real local UI integration using headless Microsoft Edge"]

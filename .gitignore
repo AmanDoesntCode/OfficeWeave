@@ -1,0 +1,15 @@
+.env
+log.csv
+file.txt
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+test-results/
+*.sqlite3*
+*.dpapi
+google-client.json
+microsoft-client.json
+dist
